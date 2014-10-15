@@ -13,6 +13,11 @@
 		10A5A49E19EE3C7B0080F108 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10A5A49D19EE3C7B0080F108 /* Images.xcassets */; };
 		10A5A4A119EE3C7B0080F108 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 10A5A49F19EE3C7B0080F108 /* LaunchScreen.xib */; };
 		10A5A4AD19EE3C7B0080F108 /* swift_objc_mixed_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10A5A4AC19EE3C7B0080F108 /* swift_objc_mixed_testTests.swift */; };
+		10A5A4B919EE3DC40080F108 /* MyModule.mm in Sources */ = {isa = PBXBuildFile; fileRef = 10A5A4B819EE3DC40080F108 /* MyModule.mm */; };
+		10A5A4BC19EE42C30080F108 /* MyCppLib.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 10A5A4BA19EE42C30080F108 /* MyCppLib.cpp */; };
+		10A5A4BE19EED25C0080F108 /* MyProtocol.h in Sources */ = {isa = PBXBuildFile; fileRef = 10A5A4BD19EED25C0080F108 /* MyProtocol.h */; };
+		10A5A4C119EED8020080F108 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 10A5A4BF19EED8020080F108 /* README.md */; };
+		10A5A4C219EED8020080F108 /* TemplateIcon2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 10A5A4C019EED8020080F108 /* TemplateIcon2x.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +41,14 @@
 		10A5A4A619EE3C7B0080F108 /* swift-objc-mixed-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "swift-objc-mixed-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		10A5A4AB19EE3C7B0080F108 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		10A5A4AC19EE3C7B0080F108 /* swift_objc_mixed_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = swift_objc_mixed_testTests.swift; sourceTree = "<group>"; };
+		10A5A4B619EE3DC30080F108 /* swift-objc-mixed-test-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "swift-objc-mixed-test-Bridging-Header.h"; sourceTree = "<group>"; };
+		10A5A4B719EE3DC40080F108 /* MyModule.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModule.h; sourceTree = "<group>"; };
+		10A5A4B819EE3DC40080F108 /* MyModule.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MyModule.mm; sourceTree = "<group>"; };
+		10A5A4BA19EE42C30080F108 /* MyCppLib.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MyCppLib.cpp; sourceTree = "<group>"; };
+		10A5A4BB19EE42C30080F108 /* MyCppLib.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyCppLib.h; sourceTree = "<group>"; };
+		10A5A4BD19EED25C0080F108 /* MyProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyProtocol.h; sourceTree = "<group>"; };
+		10A5A4BF19EED8020080F108 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		10A5A4C019EED8020080F108 /* TemplateIcon2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = TemplateIcon2x.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +72,8 @@
 		10A5A48819EE3C7B0080F108 = {
 			isa = PBXGroup;
 			children = (
+				10A5A4BF19EED8020080F108 /* README.md */,
+				10A5A4C019EED8020080F108 /* TemplateIcon2x.png */,
 				10A5A49319EE3C7B0080F108 /* swift-objc-mixed-test */,
 				10A5A4A919EE3C7B0080F108 /* swift-objc-mixed-testTests */,
 				10A5A49219EE3C7B0080F108 /* Products */,
@@ -83,6 +98,12 @@
 				10A5A49D19EE3C7B0080F108 /* Images.xcassets */,
 				10A5A49F19EE3C7B0080F108 /* LaunchScreen.xib */,
 				10A5A49419EE3C7B0080F108 /* Supporting Files */,
+				10A5A4B719EE3DC40080F108 /* MyModule.h */,
+				10A5A4BD19EED25C0080F108 /* MyProtocol.h */,
+				10A5A4B819EE3DC40080F108 /* MyModule.mm */,
+				10A5A4B619EE3DC30080F108 /* swift-objc-mixed-test-Bridging-Header.h */,
+				10A5A4BA19EE42C30080F108 /* MyCppLib.cpp */,
+				10A5A4BB19EE42C30080F108 /* MyCppLib.h */,
 			);
 			path = "swift-objc-mixed-test";
 			sourceTree = "<group>";
@@ -192,6 +213,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A5A4C219EED8020080F108 /* TemplateIcon2x.png in Resources */,
 				10A5A49C19EE3C7B0080F108 /* Main.storyboard in Resources */,
 				10A5A4A119EE3C7B0080F108 /* LaunchScreen.xib in Resources */,
 				10A5A49E19EE3C7B0080F108 /* Images.xcassets in Resources */,
@@ -212,8 +234,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				10A5A4C119EED8020080F108 /* README.md in Sources */,
 				10A5A49919EE3C7B0080F108 /* ViewController.swift in Sources */,
+				10A5A4BC19EE42C30080F108 /* MyCppLib.cpp in Sources */,
+				10A5A4B919EE3DC40080F108 /* MyModule.mm in Sources */,
 				10A5A49719EE3C7B0080F108 /* AppDelegate.swift in Sources */,
+				10A5A4BE19EED25C0080F108 /* MyProtocol.h in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,20 +363,27 @@
 		10A5A4B119EE3C7B0080F108 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "swift-objc-mixed-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-mixed-test/swift-objc-mixed-test-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
 		};
 		10A5A4B219EE3C7B0080F108 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = "swift-objc-mixed-test/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "swift-objc-mixed-test/swift-objc-mixed-test-Bridging-Header.h";
 			};
 			name = Release;
 		};

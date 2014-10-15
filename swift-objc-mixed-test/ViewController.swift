@@ -8,10 +8,19 @@
 
 import UIKit
 
+class MyDelegate: MyProtocol {
+    func getMyName() -> String {
+        return "Li"
+    }
+}
+
 class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        let myDelegate = MyDelegate()
+        let m = MyModule(delegate: myDelegate)
+        m.sayHello()
         // Do any additional setup after loading the view, typically from a nib.
     }
 
